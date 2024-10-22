@@ -1,2 +1,2 @@
 # freeCodeCamp
- Alle fCC Lektionen
+ This repository contains my fCC Certification Projects.
