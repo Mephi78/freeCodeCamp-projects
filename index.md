@@ -1,7 +1,4 @@
----
-title: fCC Certification Projects by Mephi
----
-<img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo" />
+<img class="fcclogo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo" />
 # My Certification Projects
 ## 1 Responsive Webdesign
 - 1-1 Survey Form
