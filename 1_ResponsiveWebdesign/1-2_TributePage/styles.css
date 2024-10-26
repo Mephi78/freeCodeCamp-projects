@@ -1,0 +1,66 @@
+/* Bonus: Give it your own personal style. */
+body {
+  background-color: #c2f0f0;
+  color: #c2f0f0;
+  font-family: Georgia, serif;
+  padding: 20px;
+}
+
+#main {
+  width: 75%;
+  min-width: 500px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px 35px;
+  background-color: #73264d;
+  border-radius: 1em 3em 3em 1em;
+}
+
+h1 {
+  font-family: "Lucida Grande", Arial, sans-serif;
+  color: #33cccc;
+  text-align: center;
+}
+
+#img-caption, #disclaimer {
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#image {
+  border: thick dotted #c2f0f0;
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+#tribute-info, #tribute-content {
+  text-align: justify;
+}
+
+#tribute-info {
+  color: #33cccc;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #c2f0f0;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+#footer {
+  border: 1px solid #c2f0f0;
+  border-radius: 0.2em;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#disclaimer {
+  font-weight: bold;
+  text-align: center;
+}
