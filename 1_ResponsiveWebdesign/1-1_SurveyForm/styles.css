@@ -1,0 +1,74 @@
+/* Bonus: Give it your own personal style. */
+body {
+  background-image: url(https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?width=2000);
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1, p {
+  text-align: center;
+  color: #f8f4db
+}
+
+p {
+  font-style: italic;
+  background-color: #470614;
+  width: 100%;
+  padding: 4px 1px;
+  border-radius: 0.5em;
+}
+
+.formcontainer {
+  background-color: #FF7733;
+  border-radius: 1em;
+  padding: 0.2em  2em;
+  width: 500px;
+  margin: 0 auto;
+  color: #f8f4db;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+fieldset {
+  border-color: #f8f4db;
+  border-radius: 0 1em 1em 1em;
+  margin-bottom: 15px;
+}
+
+input, textarea, select {
+  margin: 5px 0 0 0;
+  min-height: 2em;
+  width: 100%;
+  border: 1px solid #FF7733;
+  border-radius: 0.5em;
+  accent-color: #88b810;
+}
+
+select {
+  display: block;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 40%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #88b810;
+  border-color: #f8f4db;
+  color: #f8f4db;
+}
