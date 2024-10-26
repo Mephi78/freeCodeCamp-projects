@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>CertProject: Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="formcontainer">
+		<!-- 1. page title in h1 element with id of title -->
+		<h1 id="title">freeCodeCamp Survey Form</h1>
+		<!-- 2. explanation in p element with id of description -->
+		<p id="description">
+		  Thank you for taking the time to help us improve our platform
+		</p>
+		<!-- 3. form element with id of survey-form -->
+		<form id="survey-form">
+		  <!-- 4. required name input field with id of name and type of text -->
+		  <!-- 10. label for each input -->
+		  <label for="name" id="name-label" class="bold">Name <input id="name" type="text" required placeholder="Insert your name here"></label>
+		  <!-- 5. required email input field with id of email -->
+		  <label for="email" id="email-label" class="bold">Email <input id="email" type="email" required placeholder="EMail"></label>
+		  <!-- 6. wrongly formatted email results in HTML5 validation error -->
+		  <!-- 11. placeholder for each input -->
+		  <!-- 12. select dropdown element with an id of dropdown and at least two options -->
+		  <label for="dropdown" class="bold">Your current role is best described by
+			<select id="dropdown">
+			  <option disabled selected>Select current role</option>
+			  <option>Student</option>
+			  <option>Employee</option>
+			  <option>Freelancer</option>
+			  <option>Lifelong Learner</option>
+			  <option>Other</option>
+			</select>
+		  </label>
+		  <fieldset>
+		    <legend class="bold">Would you recommend freeCodeCamp to a friend?</legend>
+			<!-- 13. group of at least two radio buttons that are grouped using the name attribute -->
+			<label for="r1"><input id="r1" type="radio" name="radioselect" value="sure" class="inline" checked /> Definitely</label>
+			<label for="r2"><input id="r2" type="radio" name="radioselect" value="maybe" class="inline" /> Maybe</label>
+			<label for="r3"><input id="r3" type="radio" name="radioselect" value="indecisive" class="inline" /> Not sure</label>
+		  </fieldset>
+		  <!-- 14.  several fields from a series of checkboxes, each of which must have a value attribute -->
+		  <fieldset>
+		    <legend class="bold">Features you would like to see improved</legend>
+			<label for="cb1"><input id="cb1" type="checkbox" value="challenges" class="inline"> Challenges</label>
+			<label for="cb2"><input id="cb2" type="checkbox" value="forum" class="inline"> Forum</label>
+			<label for="cb3"><input id="cb3" type="checkbox" value="meetups" class="inline"> Meetups</label>
+			<label for="cb4"><input id="cb4" type="checkbox" value="courses" class="inline"> Additional Courses</label>
+		  </fieldset>
+		  <!-- 15. textarea for additional comments -->
+		  <!-- 7. number input field with id of number -->
+		  <!-- 8. should not accept non-numbers -->
+		  <!-- 9. numbers outside range result in validation error -->
+		  <label for="number" id="number-label" class="bold">Your star rating for our service <input id="number" type="number" inputmode="numeric" min="1" max="5" placeholder="1 to 5"></label>
+		  <label for="addcomments" class="bold">Any more suggestions?
+			  <textarea id="addcomments" name="addcomments" rows="4" cols="50" placeholder="Any additional comments or suggestions?"></textarea>
+			</label>
+		  <!-- 16. button with id of submit -->
+		  <input type="submit" id="submit" value="Submit" class="bold" />
+		</form>
+    </div>
+  </body>
+</html>
