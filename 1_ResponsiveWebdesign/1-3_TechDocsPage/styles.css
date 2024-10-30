@@ -1,4 +1,17 @@
 /* Bonus: Give it your own personal style. */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/*body {
+  background-color: #ffffcc;
+  color: #003366;
+}*/
+
 body {
 	background-color: #ffffcc;
 	color: #002b80;
