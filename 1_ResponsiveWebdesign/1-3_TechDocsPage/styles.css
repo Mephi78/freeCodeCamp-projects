@@ -7,16 +7,42 @@ html {
   box-sizing: inherit;
 }
 
-/*body {
+body {
   background-color: #ffffcc;
   color: #003366;
-}*/
-
-body {
-	background-color: #ffffcc;
-	color: #002b80;
 }
 
 .navlist {
 	list-style-type: none;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #001133;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #ffffcc;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #003366;
+}
+
+h1, h2 {
+  font-family: Verdana, sans-serif;
 }
