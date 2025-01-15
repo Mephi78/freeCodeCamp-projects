@@ -6,22 +6,88 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+	<!-- 8. nav element with corresponding id="navbar"-->
     <nav id="navbar">
-      <h1>TECDOC</h1>
-	  <ul class="navlist">
-		<li><a class="nav-link" href="#title-of-section">Title of section</a></li>
-      <li><a class="nav-link" href="#">Titel 2</a></li>
-		<li><a class="nav-link" href="#">Titel 3</a></li>
-		<li><a class="nav-link" href="#">Titel 4</a></li>
-		<li><a class="nav-link" href="#">Titel 5</a></li>
-	  </ul>
+		<!-- 9. navbar element contains one header with topic of the technical documentation-->
+		<!-- 11. header in #navbar must come before any link-->
+		<header>Javascript</header>
+		<ul class="navlist">
+			<!-- 10. navbar contains link (a) elements with class of nav-link for every main-section-->
+			<!-- 12. nav-link contains text corresponding to the header text within each section-->
+			<!-- 13. Click on a navbar element navigates to the corresponding section of the #main-doc-->
+			<li><a class="nav-link" href="#Grundlagen">Grundlagen</a></li>
+			<li><a class="nav-link" href="#Variablen">Variablen</a></li>
+			<li><a class="nav-link" href="#Datentypen">Datentypen</a></li>
+			<li><a class="nav-link" href="#Operatoren">Operatoren</a></li>
+			<li><a class="nav-link" href="#Math_Object">Math Object</a></li>
+		</ul>
     </nav>
+	<!-- 1. main element with corresponding id="main-doc" contains the main content (technical documentation)-->
     <main id="main-doc">
-      <section id="title_of_section" class="main-section"><h2>Title of section</h2><p></p><p><ul><li>Listitem</li><li></li><li></li><li></li><li></li></ul></p></section>
-<section id="title_of_section" class="main-section"><h2>Title of section</h2><p></p><p></p></section>
-<section id="title_of_section" class="main-section"><h2>Title of section</h2><p></p><p></p></section>
-<section id="title_of_section" class="main-section"><h2>Title of section</h2><p></p><p></p></section>
-<section id="title_of_section" class="main-section"><h2>Title of section</h2><p></p><p></p></section>
+		<!-- 2. Within #main-doc minimum 5 section elements with class main-section-->
+		<!-- 3. First element within .main-section is a header element containing the topic of that section.-->
+		<!-- 4. Each main-section should have an id corresponding with the text its header. Replace spaces with underscores.-->
+		<!-- 5. .main-section elements should contain minimum 10 p elements total-->
+		<section id="Grundlagen" class="main-section">
+			<header>Grundlagen</header>
+			<p>JavaScript wurde 1995 von Netscape entwickelt. Die Skriptsprache ist auch bekannt als JS oder offiziell ECMAScript2019/ES2019.</p>
+			<p>JavaScript ist case sensitive. Namenskonvention: Camel Case (erstes Wort lower case, weitere Wörter starten mit upper case).</p>
+			<p>
+			<code>// Das ist ein einzeiliger Kommentar</code>
+			</br>
+			<code>/* mehrzeiliger Kommentar*/</code>
+			</p>
+		</section>
+		<section id="Variablen" class="main-section">
+			<header>Variablen</header>
+			<p>Variablennamen können aus Buchstaben, Ziffern, <code>$</code> und _ bestehen, aber nicht mit einer Ziffer beginnen.</br>
+			Variablen werden deklariert mittels <code>var</code>, <code>const</code> oder <code>let</code> und initialisiert mit dem Zuweisungsoperator <code>=</code>.</br>
+			Konstanten müssen initialisiert werden mit <code>const konstante = value;</code> und sind nicht änderbar.</p>
+			<p><code>typeof my_string</code> gibt den Typ der Variablen <code>my_string</code> zurück, bspw. <i>String</i>.</p>
+			<p>
+				<!-- 7. .main-section should contain at least 5 li items total-->
+				<ul>
+					<li>var deklariert eine globale Variable; kann redeklariert werden; global scope</li>
+					<li>let deklariert eine lokale Variable im Scope eines Blocks; block scope, nicht erneut deklarierbar</li>
+					<li>const deklariert eine nur lesbare Konstante im Scope eines Blocks und initialisiert sie einmalig</li>
+					<li>Faustregel: const immer, wenn ein Wert oder ein Datentyp sich nicht ändern soll, sonst let</li>
+					<li>const immer für new Array, Object, Function, RegExp</li>
+				</ul>
+			</p>
+		</section>
+		<section id="Datentypen" class="main-section">
+			<header>Datentypen</header>
+			<p>Nach ECMA-Standard gibt es acht Datentypen, die primitiven Typen String, Number, Boolean, undefined, null, Bigint, Symbol und das komplexere Object.</p>
+			<p><b>Strings</b> werden verwendet, um Text darzustellen. Sie werden unter Verwendung von einfachen oder doppelten Anführungszeichen deklariert.</br>
+			Das String-Objekt hat verschiedene Methoden, z.B. <code>substring(), charAt(), toUpperCase()</code>.</p>
+		<!-- 6. .main-section elements should contain at least 5 code elements total-->
+		</section>
+		<section id="Operatoren" class="main-section">
+			<header>Operatoren</header>
+			<p>
+				<ul>
+					<li>Zuweisungsoperator: <code>=</code></li>
+					<li>normaler <code>==</code> und strikter Vergleichsoperator <code>===</code> (selber Wert UND Typ), Ungleichheit <code>!=</code></li>
+					<li>Arithmetische Operatoren (Addition, Subtraktion, Multiplikation, Division): <code>+ - * /</code></li>
+					<li>Modulo (Rest), Exponent: <code>% **</code></li>
+					<li>Vergleichsoperator (gleich, ungleich, größer, kleiner): <code>== != > <</code></li>
+				</ul>
+			</p>
+			<p>Kurzschreibweise: <code>x = x + y</code> ist bspw. dasselbe wie <code>x += y</code></p>
+			<p>Operatoren sorgen für eine automatische Typenkonvertierung, z.B. <code>console.log("5" - 1) // 4</code></p>
+		</section>
+		<section id="Math_Object" class="main-section">
+			<header>Math Object</header>
+			<p>Das <code>Math</code>-Objekt enthält statische Eigenschaften und Methoden für mathematische Konstanten und Funktionen.</p>
+			<p>
+				<ul>
+					<li><code>Math.random()</code> gibt einen Zufallswert >= 0 und < 1 zurück</li>
+					<li><code>Math.floor()</code> rundet eine Fließkommazahl ab</li>
+					<li><code>Math.ceil()</code> rundet eine Fließkommazahl auf</li>
+					<li>Bsp.: <code>Math.floor(Math.random() * 6) + 1</code> gibt eine Zufallszahl von 1 bis 6 zurück (Würfel)</li>
+				</ul>
+			</p>
+		</section>
     </main>
   </body>
 </html>
