@@ -3,7 +3,7 @@
 ## 1 Responsive Webdesign
 - [1-1 Survey Form](https://html-preview.github.io/?url=https://github.com/Mephi78/freeCodeCamp/blob/main/1_ResponsiveWebdesign/1-1_SurveyForm/index.html){:target="_blank"}
 - [1-2 Tribute Page](https://html-preview.github.io/?url=https://github.com/Mephi78/freeCodeCamp/blob/main/1_ResponsiveWebdesign/1-2_TributePage/index.html){:target="_blank"}
-- 1-3 Technical Documentation Page
+- [1-3 Technical Documentation Page](https://html-preview.github.io/?url=https://github.com/Mephi78/freeCodeCamp/blob/main/1_ResponsiveWebdesign/1-3_TechDocsPage/index.html){:target="_blank"}
 - 1-4 Product Landing Page
 - 1-5 Personal Portfolio Webpage
 ## 2 JavaScript Algorithms and Data Structures
