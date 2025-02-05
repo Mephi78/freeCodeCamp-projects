@@ -8,4 +8,7 @@ html {
 
 .fcclogo {
   filter: invert(58%) sepia(92%) saturate(3014%) hue-rotate(330deg) brightness(98%) contrast(106%);
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
