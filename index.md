@@ -1,4 +1,4 @@
-<div class="fcclogo"><img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo" width="600" /></div>
+<div class="fcclogo"><img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo" width="200" /></div>
 # My Certification Projects
 ## 1 Responsive Webdesign
 - [1-1 Survey Form](https://html-preview.github.io/?url=https://github.com/Mephi78/freeCodeCamp/blob/main/1_ResponsiveWebdesign/1-1_SurveyForm/index.html){:target="_blank"}
