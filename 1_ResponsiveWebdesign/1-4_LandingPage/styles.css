@@ -1,0 +1,139 @@
+/* personal style with the help of
+ * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ */
+
+ * {
+  box-sizing: border-box; /* includes padding and margin in total height/width of elements */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: teal;
+}
+
+body {
+  color: white;
+  font-family: Verdana, sans-serif;
+  min-width: 300px;
+}
+
+header {
+  background-color: inherit; /* ...from body, otherwise text scrolls through top */
+  padding: 10px;
+  display: grid;
+  position: sticky; /* 13 */
+  top: 0;
+}
+
+#nav-bar {
+  background-color: coral;
+  border-radius: 5px 15px;
+}
+
+#header-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  opacity: 0.7;
+}
+
+.nav-list {
+	list-style-type: none; /* removes list markers */
+	font-size: 14px;
+	font-weight: bold;
+  overflow: hidden;
+  padding: 5px 0;
+}
+
+.nav-list-item {
+  padding-right: 15px;
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: teal;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.nav-list-item :hover {
+  background: white;
+  border-radius:3px;
+  opacity: 0.8;
+}
+
+main {
+  padding: 0 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#video {
+  border: none;
+  /* center iframe */
+  display: block;
+  margin: 20px auto;
+  width: 560px;
+  height: 315px;
+}
+
+form {
+  margin: 10px auto;
+  justify-content: center;
+}
+
+.superhighlight {
+  color: coral;
+}
+
+#about {
+  /* flex blocks the whole row, whereas inline-flex would make the container itself inline */
+  display: flex;  /* 15 */
+  justify-content: space-between;
+}
+
+.flex-detail {
+  background-color: coral;
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+footer {
+  margin: 40px auto;
+  font-size: 8pt;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 5px 15px;
+  width: 90vw;
+  max-width: 780px;
+}
+
+/* 14 */
+@media only screen and (max-width: 600px) { /* width <= 600 px */
+  #video {
+    width: 90vw;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 450px) { /* width <= 600 px */
+  .nav-list {
+    display: flex;
+    flex-direction: column-reverse;
+    float: right;
+  }
+
+  .nav-list-item {
+    float: right;
+  }
+}
