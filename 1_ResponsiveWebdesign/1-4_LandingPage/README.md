@@ -11,8 +11,8 @@
 6. embedded product video with id="video"
 7. form element with id="form"
 8. input field with id="email"
-9. + user tip placeholder text
-10. + HTML5 validation to confirm correct email address input
+9. ...user tip placeholder text
+10. ...HTML5 validation to confirm correct email address input
 11. submit input with id="submit"
 12. ...submits email to a static page (mock URL: https://www.freecodecamp.com/email-submit)
 13. navbar always at top of viewport

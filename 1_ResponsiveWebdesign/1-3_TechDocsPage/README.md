@@ -3,9 +3,9 @@
 **Objective**: Build a technical documentation page.
 
 ## User Stories
-* main element with id="main-doc" contains main content (technical documentation)
-* Within #main-doc minimum 5 section elements with class = "main-section"
-* first element within each .main-section should be a header element containing topic description
+1. main element with id="main-doc" contains main content (technical documentation)
+2. Within #main-doc minimum 5 section elements with class = "main-section"
+3. first element within each .main-section should be a header element containing topic description
 4. Each main-section has an id that corresponds with the text of each header contained within (replace spaces with underscore)
 5. main-sections should contain at least ten p elements total
 6. main-sections should contain at least five code elements total
